@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/github-oauth.iml" filepath="$PROJECT_DIR$/github-oauth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oauthLibGithub/oauthLibGithub.iml" filepath="$PROJECT_DIR$/oauthLibGithub/oauthLibGithub.iml" />
+    </modules>
+  </component>
+</project>

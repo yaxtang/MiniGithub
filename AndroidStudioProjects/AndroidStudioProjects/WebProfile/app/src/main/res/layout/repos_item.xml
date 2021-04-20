@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageButton
+        android:id="@+id/icon"
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/descrip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/proj"
+        android:layout_width="220dp"
+        android:layout_height="25dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/Open"
+        android:layout_alignRight="@+id/descrip"
+        android:layout_alignEnd="@+id/descrip" />
+
+    <TextView
+        android:id="@+id/descrip"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/proj"
+        android:layout_marginTop="17dp"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Open"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="OnClick"
+        android:text="open"
+        android:textSize="14sp"
+        android:layout_alignBottom="@+id/descrip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    />
+
+</RelativeLayout>

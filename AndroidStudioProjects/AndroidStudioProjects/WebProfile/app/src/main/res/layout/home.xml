@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/halloween">
+    <!--android:background="@drawable/green"
+    android:alpha="0.75"-->
+
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="Login"
+        android:layout_alignBottom="@+id/back"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/Oauth"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Waiting for authorization...."
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_below="@+id/github_graph"
+        android:layout_alignLeft="@+id/back"
+        android:layout_alignStart="@+id/back"
+        android:layout_marginTop="29dp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="70dp"
+        android:alpha ="0.3"
+        android:background="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/github_graph"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/githubgraph"
+        android:layout_marginTop="87dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

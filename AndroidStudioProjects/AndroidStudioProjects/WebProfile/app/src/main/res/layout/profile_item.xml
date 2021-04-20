@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+   >
+
+
+    <ImageView
+        android:id="@+id/avatar_background"
+        android:layout_width= "match_parent"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/profile_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="25"
+        android:alpha="0.50"
+        android:background="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/profile_avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_weight="15"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Yaxin Tang"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="yaxin.t@gmail.com"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_below="@+id/profile_name"
+            android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/profile_github"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://github.com/yaxtang"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profile_email"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/profile_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/profile_github"
+        android:layout_alignLeft="@+id/profile_github"
+        android:layout_alignRight="@+id/profile_github"
+        android:layout_alignStart="@+id/profile_github"
+        android:layout_below="@+id/profile_github"
+        android:layout_marginTop="8dp"
+        android:contextClickable="false"
+        android:text="Current student at UIUC"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Followers"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/profile_bio"
+        android:layout_alignLeft="@+id/profile_bio"
+        android:layout_alignRight="@+id/profile_bio"
+        android:layout_alignStart="@+id/profile_bio"
+        android:layout_below="@+id/profile_bio"
+        android:layout_marginTop="69dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="changePage"
+        android:text="Follower >>"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/Following"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Followers"
+        android:layout_alignLeft="@+id/Followers"
+        android:layout_alignRight="@+id/Followers"
+        android:layout_alignStart="@+id/Followers"
+        android:layout_below="@+id/Followers"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="changePage"
+        android:text="Following >>"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/public_repos"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Following"
+        android:layout_alignLeft="@+id/Following"
+        android:layout_alignRight="@+id/Following"
+
+        android:layout_alignStart="@+id/Following"
+        android:layout_below="@+id/Following"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="changePage"
+        android:text="Public Repositories >>"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profile_email"
+        android:layout_alignStart="@+id/profile_email"
+        android:layout_below="@+id/public_repos"
+        android:layout_marginTop="18dp"
+        android:text="Created by Yaxin Tang@2017"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
